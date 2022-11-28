@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css ">
+	<style type="text/css">
+		body{
+			font-family: sans-serif;
+			font-size: 18px;
+		}
+		div{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: grey;
+			
+		}
+
+		*{
+			box-sizing: border-box;
+		}
+
+
+         .container{
+         	display: flex;
+         	width: 100%;
+         	margin-bottom: 15px;
+         	font-size: 18px;
+
+         }	
+
+         .icon{
+         	padding: 10px;
+         	background: darkblue;
+         	color: white;
+         	width: 50px;
+         	text-align: center;
+         }	
+
+
+         .input-field:{
+            width: 500px;
+            padding: 10px;
+            outline: none;
+            font-size: 18px;
+
+
+
+         }
+
+         .input-field:focus{
+         	border: 2px solid green;
+         }
+         .btn{
+         	background-color: green;
+         	color: white;
+         	padding: 15px;
+         	border: none;
+         	cursor: pointer;
+         	opacity: 0.8;
+         	font-size: 19px;
+         }
+
+         .btn-hover{
+         	opacity: 1;
+         }
+
+         input:valid{
+         	background-color: skyblue;
+         }
+
+
+	</style>
+</head>
+<body>
+	<div>
+<form style="width:100%; margin: auto;">
+	<h2 style="text-align: center; font-size: 40px;">
+		Registration Form
+	</h2>
+
+	<div class="container">
+		<i class="fa fa-user icon"></i>
+		<input type="text" name="username" placeholder="Enter username"  pattern=[A-Za-z]+ class="input-field">
+		
+	</div>
+	<div class="container">
+		<i class="fa fa-envelope icon"></i>
+		<input type="text" name="email" placeholder="Enter email" class="input-field">
+		
+	</div>
+	<div class="container">
+		<i class="fa fa-lock icon"></i>
+		<input type="password" name="password" placeholder="Enter password" class="input-field">
+		
+	</div>
+	<div class="container">
+		<i class="fa fa-calendar icon"></i>
+		<input type="date" name="date" placeholder="Enter date" class="input-field">
+		
+	</div>
+	<div class="container">
+		<i class="fa fa-home icon"></i>
+		<input type="text area" name="address" placeholder="Enter Address" class="input-field">
+		
+	</div>
+<div>
+	<button type="submit" class="btn">Register</button>
+</div>
+</form>
+</div>
+</body>
+</html>
